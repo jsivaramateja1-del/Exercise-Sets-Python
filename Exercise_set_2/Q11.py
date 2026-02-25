@@ -27,3 +27,34 @@ total += d - 1
 
 weekdays = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 print(weekdays[total % 7])
+
+'''print("Process 2 :")
+d = int(input("Enter day: "))
+m = int(input("Enter month: "))
+y = int(input("Enter year: "))
+
+# January and February adjustment
+if m == 1 or m == 2:
+    m = m + 12
+    y = y - 1
+
+K = y % 100
+J = y // 100
+
+h = (d + (13*(m+1))//5 + K + K//4 + J//4 + 5*J) % 7
+
+# printing day without list
+if h == 0:
+    print("Saturday")
+elif h == 1:
+    print("Sunday")
+elif h == 2:
+    print("Monday")
+elif h == 3:
+    print("Tuesday")
+elif h == 4:
+    print("Wednesday")
+elif h == 5:
+    print("Thursday")
+else:
+    print("Friday")'''
