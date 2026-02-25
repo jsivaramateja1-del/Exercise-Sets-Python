@@ -16,3 +16,32 @@ else:
         alphanumeric.append(i)
     closest_char = min(alphanumeric, key=lambda x: abs(x - ascii_val))
     print("Closest alpha-numeric character is:", chr(closest_char))
+'''print("Process 2 :")
+ch = input("Enter a character: ")
+
+ascii_input = ord(ch)
+closest = ''
+min_diff = 1000
+
+# digits 0 - 9
+for i in range(ord('0'), ord('9')+1):
+    diff = abs(ascii_input - i)
+    if diff < min_diff:
+        min_diff = diff
+        closest = chr(i)
+
+# uppercase A - Z
+for i in range(ord('A'), ord('Z')+1):
+    diff = abs(ascii_input - i)
+    if diff < min_diff:
+        min_diff = diff
+        closest = chr(i)
+
+# lowercase a - z
+for i in range(ord('a'), ord('z')+1):
+    diff = abs(ascii_input - i)
+    if diff < min_diff:
+        min_diff = diff
+        closest = chr(i)
+
+print("Closest alphanumeric character:", closest)'''
